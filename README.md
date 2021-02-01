@@ -61,8 +61,9 @@ There are many potential improvements to this solution, some of them have alread
 * Potentially implement heading and altitude into the algorithm above, if needed.
 * Creating detailed settings for the appication with detailed command line inputs.
 * The ability to process only one airplane at a time.
+* A separate service that checks if a particular flight time "makes sense". This can be populated from available flight data and stored locally. For example - a light from New York to Miami takes an average of 2 hours and 30 minutes. If our calculations don't reasonably match that (within, for example, a 45 minue window), we can conclude that our initial calculation was incorrect and we should revisit it and potentially change the ADS-B processing algorithm accordingly. 
 * A Http based service that can look up and populate airplane data for more fine grained "real world" data.
-* rewrite the AirportCollections class to use Geographic Indexing and compare performance.
+* Rewrite the AirportCollections class to use Geographic Indexing and compare performance.
 * More detailed build process.
 * Implement a multithreaded approach to the solution so that data can be read, written and processed simultaneously.
 * Implement the solution with different types of input data (http calls, etc).
